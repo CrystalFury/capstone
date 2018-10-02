@@ -47,12 +47,12 @@ nav li:last-child {
 .banner {
   display: flex;
   align-items: center;
-  background-color: darkgrey;
+  background-color: gainsboro;
+  padding: 2rem 0 2rem 1.5rem;
 }
 
 .banner-image {
-  width: 60%;
-  padding: 2rem 1.5rem;
+  width: 58.5%;
 }
 
 .banner img {
@@ -62,6 +62,11 @@ nav li:last-child {
 .banner-text {
   display: flex;
   flex-direction: column;
+  max-width: 40%;
+  padding-left: 3rem;
+}
+
+.banner-text h1, h3, span {
   max-width: 25rem;
 }
 
@@ -82,4 +87,206 @@ nav li:last-child {
   background-color: black;
   padding: .5rem;
   font-size: 1.5rem;
+}
+
+/* Info styles */
+
+.information {
+  display: flex;
+  padding: 0 0 2rem 1.5rem;
+}
+
+.information img {
+  max-width: 100%;
+}
+
+.info-headline {
+  width: 58.5%;
+  padding: 2rem 1.5rem 0 0;
+  font-size: 1.25rem;
+}
+
+.info-headline h2 {
+  padding: 2rem 0 1.5rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.info-headline span {
+  display: inline-block;
+  padding-top: 3rem;
+}
+
+.info-content {
+  padding-top: 1rem;
+  max-width: 40%;
+  border-left: 1px ridge gainsboro;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px ridge gainsboro;
+}
+
+#guest1 {
+  background-color: gainsboro;
+}
+
+.info-image {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.info-text h3 {
+  font-size: 2rem;
+}
+
+.info-text span {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.info-text span:last-child {
+  color: blue;
+}
+
+/* Course styles */
+
+.courses {
+  padding: 2rem 4.5rem;
+  background-color: gainsboro;
+}
+
+.courses h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.courses-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course-container {
+  margin: 2rem 1rem;
+  width: 25%;
+  flex-grow: 1;
+  background-color: white;
+}
+
+.course-image img {
+  height: auto;
+  max-width: 100%;
+}
+
+.course-text {
+  font-size: 1.25rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-text h3 {
+  font-size: 2rem;
+}
+
+.course-text span {
+  display: inline-block;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Thesis styles */
+
+.thesis {
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.thesis-group {
+  display: flex;
+}
+
+.thesis-headline {
+  width: 58.5%;
+  padding: 0 1.5rem 0 0;
+  font-size: 1.25rem;
+}
+
+video {
+  max-width: 100%;
+}
+
+.thesis h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.thesis h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0 1rem 0;
+}
+
+.thesis-content {
+  max-width: 40%;
+}
+
+.thesis-container {
+  display: flex;
+  align-items: center;
+}
+
+.thesis-container:first-child {
+  background-color: gainsboro;
+}
+
+.thesis img {
+  max-width: 100%;
+}
+
+.thesis-image {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.thesis-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 1rem;
+  width: 65%;
+}
+
+/* Footer styles */
+
+.footer {
+  display: flex;
+  border: 1px solid blue;
+  padding: 1rem 1.5rem;
+}
+
+.copyright {
+  padding: 1rem 1.5rem;
+  display: inline-block;
+}
+
+.legal {
+  padding: 1rem 1.5rem;
+  float: right;
+  display: inline-block;
+}
+
+.legal span {
+  padding: 0 .25rem;
 }
