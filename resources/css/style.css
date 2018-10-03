@@ -7,7 +7,17 @@
 
 @font-face {
   font-family: 'Raleway';
-  src: url(../fonts/Raleway-Regular.ttf) format('truetype'), url(../fonts/Raleway-Bold.ttf) format('truetype');
+  src: url(../fonts/Raleway-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url(../fonts/Raleway-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-Extrabold';
+  src: url(../fonts/Raleway-ExtraBold.ttf) format('truetype');
 }
 
 html {
@@ -57,19 +67,23 @@ header {
 }
 
 .logo span:nth-child(2n+0) {
-  font-weight: bold;
+  font-family: "Raleway-Bold", Helvetica, sans-serif;
   color: black;
 }
 
-nav li {
+.navigation li {
   display: inline-block;
   padding-right: 1rem;
   font-size: 1.375rem;
   font-family: "Cabin", Helvetica, sans-serif;
 }
 
-nav li:last-child {
+.navigation li:last-child {
   padding-right: 1.5rem;
+}
+
+.mobile {
+  display: none;
 }
 
 /* banner Styles */
@@ -97,12 +111,13 @@ nav li:last-child {
 
 .banner-text h1 {
   font-size: 3rem;
-  font-weight: bold;
+  font-family: "Raleway-Extrabold", Helvetica, sans-serif;
   margin: 2rem 0;
 }
 
 .banner-text h3 {
   margin: 2rem 0;
+  font-weight: bold;
 }
 
 .button {
@@ -152,6 +167,10 @@ nav li:last-child {
   width: 35%;
   height: auto;
   padding: 1rem;
+}
+
+.mobile-info img {
+  display: none;
 }
 
 .info-text {
@@ -320,5 +339,182 @@ nav li:last-child {
 }
 
 @media only screen and (max-width: 750px) {
+  html {
+    font-size: 16px;
+  }
 
+  /* Header styles */
+
+  header {
+    display: block;
+  }
+
+  .logo, .navigation {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    padding-top: .375rem;
+  }
+
+  .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* Banner styles */
+
+  .mobile img {
+    width: 3rem;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  .banner-text {
+    max-width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .banner-text h1, h3, span {
+    max-width: 100%;
+  }
+
+  .banner-text h1, .banner-text h3 {
+    margin: 1rem 0;
+  }
+
+  .banner-text h1 {
+    font-size: 2.75rem;
+  }
+
+  .banner-text h3 {
+    font-size: 1.75rem;
+  }
+
+  /* Info styles */
+
+  .info-headline {
+    display: none;
+  }
+
+  .info-image {
+    display: none;
+  }
+
+  .mobile-info {
+    width: 100%;
+  }
+
+  .mobile-info img {
+    display: block;
+    max-width: 95%;
+  }
+
+  .info-content {
+    max-width: 100%;
+    border: 0px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 0px;
+  }
+
+  #guest1 {
+    background-color: white;
+  }
+
+  .info-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .info-text h3 {
+    font-size: 2.25rem;
+  }
+
+  .info-text span {
+    font-size: 1.375rem;
+    max-width: 95%;
+  }
+
+  /* Courses styles */
+
+  .courses {
+    background-color: white;
+    padding: 0 1.5rem;
+  }
+
+  .courses-content {
+    flex-direction: column;
+  }
+
+  .course-container {
+    width: 100%;
+    margin: 0 0 .5rem 0;
+    background-color: gainsboro;
+  }
+
+  .course-image {
+    display: none;
+  }
+
+  .course-text {
+    padding: 0;
+  }
+
+  .courses h2 {
+    font-size: 2.5rem;
+  }
+
+  .course-text h3 {
+    padding: 1rem;
+  }
+
+  .course-text span {
+    display: none;
+  }
+
+  /* thesis styles */
+
+  .thesis {
+    padding: 2rem 0;
+  }
+
+  .thesis h2 {
+    font-size: 2.5rem;
+  }
+
+  .thesis-headline {
+    width: 100%;
+    padding: 0;
+  }
+
+  .thesis-headline h3, p {
+    display: none;
+  }
+
+  .thesis-content {
+    display: none;
+  }
+
+  /* footer styles */
+
+  .legal {
+    display: none;
+  }
 }
